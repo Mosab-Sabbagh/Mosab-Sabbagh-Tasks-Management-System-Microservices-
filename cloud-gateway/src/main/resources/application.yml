@@ -18,6 +18,11 @@ spring:
               uri: http://localhost:9002
               predicates:
                 - Path=/tasks/**
+                
+            - id: Notification
+              uri: http://localhost:8084
+              predicates:
+                - Path=/notifications/**
     
     
 eureka:
